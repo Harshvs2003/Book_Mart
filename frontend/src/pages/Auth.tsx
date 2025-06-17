@@ -23,7 +23,7 @@ export default function Auth() {
     const users = JSON.parse(localStorage.getItem("users") || "[]");
     const user = users.find(
       (u: any) =>
-        u.email === formData.email &&
+        u.email === formData.email && 
         u.password === formData.password &&
         u.role === formData.role // check role also
     );
