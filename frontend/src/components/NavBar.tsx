@@ -1,4 +1,4 @@
-import "../styles/Navbar.css";
+import "../styles/NavBar.css";
 import UserProfile from "../components/UserProfile";
 import { FaShoppingCart } from "react-icons/fa";
 import { Link } from "react-router-dom";
@@ -14,7 +14,7 @@ interface Props {
   onSearchChange: (value: string) => void;
 }
 
-export default function Navbar({ toggleSidebar, user, cartCount = 0, searchQuery, onSearchChange }: Props) {
+export default function NavBar({ toggleSidebar, user, cartCount = 0, searchQuery, onSearchChange }: Props) {
   return (
     <nav className="navbar">
       <div className="navbar-left">
